@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Event Calendar</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="forward"><![CDATA[>]]></string>
+    <string name="Date"><![CDATA[->]]></string>
+
+    <string-array name="numbers">
+        <item>15m</item>
+        <item>30m</item>
+        <item>45m</item>
+        <item>1h</item>
+        <item>2h</item>
+        <item>4h</item>
+        <item>8h</item>
+    </string-array>
+</resources>

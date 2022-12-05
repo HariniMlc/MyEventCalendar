@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.a1_19440571.MainActivity">
+
+    <TextView
+        android:id="@+id/seldate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Event"
+        android:textSize="30dp"
+        android:layout_below="@+id/seldate"
+        android:inputType="textPersonName"/>
+
+    <LinearLayout
+        android:id="@+id/LLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/name">
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:hint="Add Location"
+            android:textSize="22dp" />
+
+        <ImageView
+            android:id="@+id/imageViewLocation"
+            android:layout_width="43dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/location_pointer_icon" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/eventdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Description"
+        android:textSize="22dp"
+        android:layout_below="@+id/LLocation"/>
+
+    <LinearLayout
+        android:id="@+id/LLStartTime"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eventdescription"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="Start Time" />
+
+        <TextView
+            android:id="@+id/startTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Start Time"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLEndTime"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LLStartTime"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="55dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="End Time" />
+
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/LLEndTime">
+
+        <CheckBox
+            android:id="@+id/reminder1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder 1"
+            android:textSize="24dp"
+            android:layout_marginRight="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reminder1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/LL1">
+
+        <CheckBox
+            android:id="@+id/reminder2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder 2"
+            android:textSize="24dp"
+            android:layout_marginRight="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reminder1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/LL2">
+
+        <CheckBox
+            android:id="@+id/reminder3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminder 3"
+            android:textSize="24dp"
+            android:layout_marginRight="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reminder2"/>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Add Event"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/LL3"/>
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/btnUpdate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24dp"-->
+<!--        android:text="Update Data"-->
+<!--        android:layout_below="@id/btnInsert"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/btnDelete"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24dp"-->
+<!--        android:text="Delete Existing Data"-->
+<!--        android:layout_below="@id/btnUpdate"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/btnView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="24dp"-->
+<!--        android:text="View Data"-->
+<!--        android:layout_below="@id/btnDelete"/>-->
+</RelativeLayout>
